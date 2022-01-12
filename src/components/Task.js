@@ -8,7 +8,7 @@ import {
   Box,
   VisuallyHidden,
 } from '@chakra-ui/react';
-import { StarIcon } from '@chakra-ui/icons';
+import { BellIcon } from '@chakra-ui/icons';
 
 
 export const Task = ({
@@ -59,7 +59,7 @@ export const Task = ({
       flex="none"
       aria-label={state === 'TASK_PINNED' ? 'unpin' : 'pin'}
       variant={state === 'TASK_PINNED' ? 'unpin' : 'pin'}
-      icon={<StarIcon />}
+      icon={<BellIcon />}
       onClick={() => onTogglePinTask(state, id)}
     />
   </Flex>
