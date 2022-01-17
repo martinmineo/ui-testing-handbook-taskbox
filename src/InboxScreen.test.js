@@ -50,9 +50,7 @@ describe('InboxScreen', () => {
 
     fireEvent.click(pinButton);
 
-    const unpinButton = within(getTask()).getByRole('button', {
-      name: 'unpin',
-    });
+    const unpinButton = within(getTask()).getByRole('button', { name: 'unpin', });
 
     expect(unpinButton).toBeInTheDocument();
   });
